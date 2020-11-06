@@ -15,6 +15,12 @@
 
 <%= link_to 'シミュレーションを始める！', new_plan_path %>
 
+<p>プラン一覧</p>
+<% @plan.each do |plan| %>
+    <div class="post">
+        <%= link_to "プラン#{plan.id}", plan_path(plan.id) %>
+    </div>
+<% end %>
 
 
 </body>
