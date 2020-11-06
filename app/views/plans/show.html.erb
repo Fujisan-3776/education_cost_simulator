@@ -1,0 +1,227 @@
+<h1>シミュレーション結果</h1>
+<h2>プラン<%= @plan.id%></h2>  
+
+<%# 表示箇所検討中 %>
+<%= link_to 'トップへ', root_path %>
+<%= link_to '編集する', edit_plan_path(@plan.id) %>
+<%= link_to '削除する', plan_path(@plan.id), method: :delete %>
+
+<div class="result">
+
+    <hr>
+
+    <table class="nursery">
+      <tbody>
+        <tr>
+          <th class="bbb">保育園</th>
+          <td class="ccc" id="bc"><%= Nursery.find(@plan.nursery_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="fff">期間</th>
+          <td class="ggg" id="fg"><%= NurseryPeriod.find(@plan.nursery_period_id).period %></td>
+        </tr>
+        <tr>
+          <th class="hhh">合計</th>
+          <td class="iii" id="hi"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <table class="kindergarten">
+      <tbody>
+        <tr>
+          <th class="ddd">幼稚園</th>
+          <td class="eee" id="de"><%= Kindergarten.find(@plan.kindergarten_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">合計</th>
+          <td class="iii" id="hi"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <table class="elementary">
+      <tbody>
+        <tr>
+          <th class="fff">小学校</th>
+          <td class="ggg" id="fg"><%= Elementary.find(@plan.elementary_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">習い事①</th>
+          <td class="ggg" id="fg"><%= ElementaryActivityOne.find(@plan.elementary_activity_one_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">期間①</th>
+          <td class="ggg" id="fg"><%= ElementaryActivityOnePeriod.find(@plan.elementary_activity_one_period_id).period %></td>
+        </tr>
+        <tr>
+          <th class="hhh">習い事②</th>
+          <td class="ggg" id="fg"><%= ElementaryActivityTwo.find(@plan.elementary_activity_two_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">期間②</th>
+          <td class="ggg" id="fg"><%= ElementaryActivityTwoPeriod.find(@plan.elementary_activity_two_period_id).period %></td>
+        </tr>
+        <tr>
+          <th class="hhh">合計</th>
+          <td class="iii" id="hi"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <table class="junior_high">
+      <tbody>
+        <tr>
+          <th class="fff">中学校</th>
+          <td class="ggg" id="fg"><%= JuniorHigh.find(@plan.junior_high_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">部活</th>
+          <td class="ggg" id="fg"><%= JuniorHighClub.find(@plan.junior_high_club_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">期間</th>
+          <td class="ggg" id="fg"><%= JuniorHighClubPeriod.find(@plan.junior_high_club_period_id).period %></td>
+        </tr>
+        <tr>
+          <th class="hhh">習い事</th>
+          <td class="ggg" id="fg"><%= JuniorHighActivity.find(@plan.junior_high_activity_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">期間</th>
+          <td class="ggg" id="fg"><%= JuniorHighActivityPeriod.find(@plan.junior_high_activity_period_id).period %></td>
+        </tr>
+        <tr>
+          <th class="hhh">合計</th>
+          <td class="iii" id="hi"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+     <table class="high">
+      <tbody>
+        <tr>
+          <th class="fff">高校</th>
+          <td class="ggg" id="fg"><%= High.find(@plan.high_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">部活</th>
+          <td class="ggg" id="fg"><%= HighClub.find(@plan.high_club_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">期間</th>
+          <td class="ggg" id="fg"><%= HighClubPeriod.find(@plan.high_club_period_id).period %></td>
+        </tr>
+        <tr>
+          <th class="hhh">習い事</th>
+          <td class="ggg" id="fg"><%= HighActivity.find(@plan.high_activity_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">期間</th>
+          <td class="ggg" id="fg"><%= HighActivityPeriod.find(@plan.high_activity_period_id).period %></td>
+        </tr>
+        <tr>
+          <th class="hhh">留学</th>
+          <td class="ggg" id="fg"><%= HighStudyAbroad.find(@plan.high_study_abroad_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">大学受験</th>
+          <td class="ggg" id="fg"><%= HighExamination.find(@plan.high_examination_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">合計</th>
+          <td class="iii" id="hi"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <table class="university">
+      <tbody>
+        <tr>
+          <th class="fff">大学</th>
+          <td class="ggg" id="fg"><%= University.find(@plan.university_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">部活</th>
+          <td class="ggg" id="fg"><%= UniversityClub.find(@plan.university_club_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">期間</th>
+          <td class="ggg" id="fg"><%= UniversityClubPeriod.find(@plan.university_club_period_id).period %></td>
+        </tr>
+        <tr>
+          <th class="hhh">仕送り</th>
+          <td class="ggg" id="fg"><%= UniversityMoneyTransfer.find(@plan.university_money_transfer_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">期間</th>
+          <td class="ggg" id="fg"><%= UniversityMoneyTransferPeriod.find(@plan.university_money_transfer_period_id).period %></td>
+        </tr>
+        <tr>
+          <th class="hhh">留学</th>
+          <td class="ggg" id="fg"><%= UniversityStudyAbroad.find(@plan.university_study_abroad_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">就活</th>
+          <td class="ggg" id="fg"><%= UniversityJobHunting.find(@plan.university_job_hunting_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">大学院受験</th>
+          <td class="ggg" id="fg"><%= UniversityExamination.find(@plan.university_examination_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">合計</th>
+          <td class="iii" id="hi"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <table class="graduate_school">
+      <tbody>
+        <tr>
+          <th class="fff">大学院</th>
+          <td class="ggg" id="fg"><%= GraduateSchool.find(@plan.graduate_school_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">就活</th>
+          <td class="ggg" id="fg"><%= GraduateSchoolJobHunting.find(@plan.graduate_school_job_hunting_id).fee %></td>
+        </tr>
+        <tr>
+          <th class="hhh">合計</th>
+          <td class="iii" id="hi"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <table class="total">
+      <tbody>
+        <tr>
+          <th class="hhh">総合計</th>
+          <td class="iii" id="hi"></td>
+        </tr>
+      </tbody>
+    </table>
+
+</div>
+
+    
+<canvas id="myBarChart" width="120" height="40"> 
+<%# <canvas id="myBarChart" style="position: relative; height:100; width:100"></canvas> %>
+
+  
+
+
