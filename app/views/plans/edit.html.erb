@@ -1,4 +1,5 @@
-<h1>新規プラン作成</h1>
+<h1>プラン編集</h1>
+<h2>プラン<%= @plan.id%></h2>
 
 <div class = 'calculation'>
   <%= form_with(model: @plan, local: true) do |f| %>
@@ -150,11 +151,11 @@
             <%= f.collection_select(:graduate_school_job_hunting_id, GraduateSchoolJobHunting.all, :id, :name, {}, {class:"hoge", id:"fuga"}) %> 
           </div>
         </div>
-        
+    
     </div>
 
   <div class = "save">
-      <%= f.submit "シミュレーション開始！" ,class:"sell-btn" %>
+      <%= f.submit "更新" ,class:"sell-btn" %>
   </div>
 
   <% end %>
