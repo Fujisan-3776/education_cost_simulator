@@ -1,0 +1,21 @@
+.newplan{
+  padding: 15px 0 15px 60px;
+}
+
+.payment{
+
+}
+
+.nursery,.kindergarten,.elementary,.junior_high,.high,.university,.graduate_school{
+  padding: 10px 0 10px 60px;
+
+}
+
+.pulldown{
+  display: flex;
+}
+
+p{
+  padding: 15px;
+  font-size: 20px;
+}
