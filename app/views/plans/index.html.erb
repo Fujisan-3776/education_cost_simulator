@@ -1,11 +1,31 @@
-<header>
+
   <ul class='user_check'>
     <% if user_signed_in? %>
-    <li><%= link_to current_user.name, "#", class: "user-nickname" %></li>
+    <%# <li><%= link_to current_user.name, "#", class: "user-nickname" %></li>
     <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
     <% else %>
     <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
     <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
     <% end %>
   </ul>
-</header>
+
+<body>
+
+<% if user_signed_in? %>
+  <p>ようこそ<%= current_user.name %>さん</p>
+<% else %>
+  <p>ようこそゲストさん</p>
+<% end %>
+
+
+<%= link_to 'シミュレーションを始める！', new_plan_path %>
+
+<p>プラン一覧</p>
+<% @plan.each do |plan| %>
+    <div class="post">
+        <%= link_to "プラン#{plan.id}", plan_path(plan.id) %>
+    </div>
+<% end %>
+
+
+</body>

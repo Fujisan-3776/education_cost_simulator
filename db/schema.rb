@@ -21,9 +21,9 @@ ActiveRecord::Schema.define(version: 2020_11_06_053822) do
     t.integer "elementary_activity_one_period_id", null: false
     t.integer "elementary_activity_two_id", null: false
     t.integer "elementary_activity_two_period_id", null: false
-    t.integer "junior_hi_id", null: false
-    t.integer "junior_hi_club_id", null: false
-    t.integer "junior_hi_club_period_id", null: false
+    t.integer "junior_high_id", null: false
+    t.integer "junior_high_club_id", null: false
+    t.integer "junior_high_club_period_id", null: false
     t.integer "junior_high_activity_id", null: false
     t.integer "junior_high_activity_period_id", null: false
     t.integer "high_id", null: false
