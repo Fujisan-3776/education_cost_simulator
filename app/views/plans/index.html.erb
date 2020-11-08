@@ -11,7 +11,12 @@
 
 <body>
 
-<p>ようこそ<%= current_user.name %>さん</p>
+<% if user_signed_in? %>
+  <p>ようこそ<%= current_user.name %>さん</p>
+<% else %>
+  <p>ようこそゲストさん</p>
+<% end %>
+
 
 <%= link_to 'シミュレーションを始める！', new_plan_path %>
 

@@ -10,8 +10,7 @@ class PlansController < ApplicationController
   def create
     @plan = Plan.new(plan_params)
     @plan.save
-    redirect_to root_path
-    # render :show
+    render :show
   end
 
   def show
