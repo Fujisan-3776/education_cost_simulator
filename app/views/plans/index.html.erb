@@ -1,31 +1,42 @@
+<header>
+  <div class="header_left">
+    <h1 class="title">教育費用シミュレーター</h1>
+  </div>
+  <div class="header_right">
+    <ul class="nav-lists">
+      <% if user_signed_in? %>
+      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+      <% else %>
+      <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+      <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+      <% end %>
+    </ul>
+  </div>
+</header>
 
-  <ul class='user_check'>
-    <% if user_signed_in? %>
-    <%# <li><%= link_to current_user.name, "#", class: "user-nickname" %></li>
-    <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
-    <% else %>
-    <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-    <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-    <% end %>
-  </ul>
+
 
 <body>
 
-<% if user_signed_in? %>
-  <p>ようこそ<%= current_user.name %>さん</p>
-<% else %>
-  <p>ようこそゲストさん</p>
-<% end %>
+<div class="welcome">
+  <% if user_signed_in? %>
+    <p>ようこそ<%= current_user.name %>さん</p>
+  <% else %>
+    <p>ようこそゲストさん</p>
+  <% end %>
+</div>
 
+<div class="start">
+  <%= link_to 'シミュレーションを始める！', new_plan_path %>
+</div>
 
-<%= link_to 'シミュレーションを始める！', new_plan_path %>
-
-<p>プラン一覧</p>
-<% @plan.each do |plan| %>
-    <div class="post">
-        <%= link_to "プラン#{plan.id}", plan_path(plan.id) %>
-    </div>
-<% end %>
-
+<div class="plantable">プラン一覧</div>
+<div class="planborder">
+  <% @plan.each do |plan| %>
+  <span class="plan">
+    <%= link_to "プラン#{plan.id}", plan_path(plan.id) %>
+  </span>
+  <% end %>
+</div>
 
 </body>
