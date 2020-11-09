@@ -42,12 +42,18 @@ li{
 
 .start{
   font-size: 40px;
+  padding: 20px 10px;
+  height: 60px;
+  margin: 50px 450px;
   border: 3px solid red;
   border-radius: 20px;
   text-align: center;
-  margin: 0 400px;
+  
   background-color: lightpink;
+}
 
+.under_bar{
+  text-decoration: none;
 }
 
 .plantable{
@@ -62,4 +68,15 @@ li{
 .plan{
   font-size: 25px;
   margin: 0 30px;
+}
+
+.how_to_use{
+  padding: 50px 300px;
+}
+
+.how_to_use_inner{
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 20px;
 }

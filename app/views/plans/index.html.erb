@@ -27,7 +27,7 @@
 </div>
 
 <div class="start">
-  <%= link_to 'シミュレーションを始める！', new_plan_path %>
+  <%= link_to 'シミュレーション開始！', new_plan_path, class: "under_bar" %>
 </div>
 
 <div class="plantable">プラン一覧</div>
@@ -37,6 +37,18 @@
     <%= link_to "プラン#{plan.id}", plan_path(plan.id) %>
   </span>
   <% end %>
+</div>
+
+<div class="how_to_use">
+<div class="how_to_use_inner">
+  <ul>
+    <li>＜使い方＞</li>
+    <li>１．シミュレーションプランを作成するにはログインして下さい</li>
+    <li>２．ログイン後、上記の「シミュレーション開始！」ボタンをクリックして下さい</li>
+    <li>３．必要項目をプルダウンの中から選択して下さい</li>
+    <li>４．「結果」ボタンをクリックするとシミュレーション結果が表示されます</li>
+    <li>５．未ログインでも作成済みのプランは閲覧出来ます</li>
+</div>
 </div>
 
 </body>
