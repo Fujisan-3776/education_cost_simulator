@@ -4,7 +4,11 @@ class PlansController < ApplicationController
   end
 
   def new
-    @plan = Plan.new
+    if user_signed_in?
+      @plan = Plan.new
+    else 
+      redirect_to root_path
+    end
   end
 
   def create
