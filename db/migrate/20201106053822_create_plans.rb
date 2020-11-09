@@ -31,6 +31,7 @@ class CreatePlans < ActiveRecord::Migration[6.0]
       t.integer   :university_examination_id             , null: false
       t.integer   :graduate_school_id                    , null: false
       t.integer   :graduate_school_job_hunting_id        , null: false
+      t.references :user                                 , null: false, foreign_key: true
 
       t.timestamps
     end

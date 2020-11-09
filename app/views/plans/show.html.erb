@@ -1,15 +1,44 @@
-<h1>シミュレーション結果</h1>
-<h2>プラン<%= @plan.id%></h2>  
+<header>
+  <div class="header_left">
+    <h1 class="title">シミュレーション結果</h1>
+  </div>
+  <div class="header_right">
+    <ul class="nav-lists">
+      <li><%= link_to 'トップへ', root_path %></li>
+      <% if user_signed_in? && current_user.id == @plan.user.id%>
+      <li><%= link_to '編集する', edit_plan_path(@plan.id), method: :get %></li>
+      <li><%= link_to '削除する', plan_path(@plan.id), method: :delete %></li>
+      <% end %>
+    </ul>
+  </div>
+</header>
 
-<%# 表示箇所検討中 %>
-<%= link_to 'トップへ', root_path %>
-<%= link_to '編集する', edit_plan_path(@plan.id) %>
-<%= link_to '削除する', plan_path(@plan.id), method: :delete %>
+<div class="welcome">
+  <h2>プラン<%= @plan.id%></h2>  
+</div>
 
-<div class="result">
+<div class="sum">
+  <h2 >合計</h2>
+  <h2 id="total_sum"></h2>
+  <h2>万円</h2>
+</div>
 
+<div class="average">
+  <h2>　　→平均出費額</h2>
+  <h2>　・月額：</h2>
+  <h2 id="average_month"></h2>
+  <h2>万円</h2>
+  <h2>　・年額：</h2>
+  <h2 id="average_year"></h2>
+  <h2>万円</h2>
+</div>
+
+<div class="graph">    
+  <canvas id="myBarChart" width="120" height="40"> 
+</div>
+
+<div hidden class="result">
     <hr>
-
     <table class="nursery">
       <tbody>
         <tr>
@@ -207,19 +236,8 @@
 
     <hr>
 
-    <table class="total">
-      <tbody>
-        <tr>
-          <th class="aaa">総合計</th>
-          <td class="aaa" id="total_sum"></td>
-        </tr>
-      </tbody>
-    </table>
-
 </div>
 
-    
-<canvas id="myBarChart" width="120" height="40"> 
 
   
 

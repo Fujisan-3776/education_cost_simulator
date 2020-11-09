@@ -31,4 +31,6 @@ class Plan < ApplicationRecord
   belongs_to_active_hash :graduate_school
   belongs_to_active_hash :graduate_school_job_hunting
 
+  belongs_to :user
+
 end

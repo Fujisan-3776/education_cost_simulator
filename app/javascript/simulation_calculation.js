@@ -44,8 +44,10 @@ function calculation(){
   const graduate_school =                  document.getElementById("graduate_school");
   const graduate_school_job_hunting =      document.getElementById("graduate_school_job_hunting");
   const graduate_school_sum =              document.getElementById("graduate_school_sum");
-  //総合計
+  //合計
   const total_sum =  document.getElementById("total_sum")
+  const average_year =  document.getElementById("average_year")
+  const average_month =  document.getElementById("average_month")
   
 
   //合計金額を計算し、新たな変数に代入
@@ -56,7 +58,9 @@ function calculation(){
   high_result =            parseInt(high.innerText * 12 * 3) + parseInt(high_club.innerText * 12 * high_club_period.innerText) + parseInt(high_activity.innerText * 12 * high_activity_period.innerText) + parseInt(high_study_abroad.innerText) + parseInt(high_examination.innerText)
   university_result =      parseInt(university.innerText * 12 * 3) + parseInt(university_club.innerText * 12 * university_club_period.innerText) + parseInt(university_money_transfer.innerText * 12 * university_money_transfer_period.innerText) + parseInt(university_study_abroad.innerText) + parseInt(university_job_hunting.innerText) + parseInt(university_examination.innerText)
   graduate_school_result = parseInt(graduate_school.innerText * 12 * 3) + parseInt(graduate_school_job_hunting.innerText)
-  total_result =           nursery_result + kindergarten_result + elementary_result + junior_high_result + high_result + university_result + graduate_school_result   
+  total_result =           parseInt((nursery_result + kindergarten_result + elementary_result + junior_high_result + high_result + university_result + graduate_school_result) / 10000)
+  average_year_result =    parseInt(total_result / 20)
+  average_month_result =   parseInt(average_year_result / 12)
 
   //計算結果を基にHTMLを更新
   nursery_sum.innerHTML      =      nursery_result
@@ -66,7 +70,9 @@ function calculation(){
   high_sum .innerHTML        =      high_result
   university_sum .innerHTML  =      university_result
   graduate_school_sum .innerHTML  = graduate_school_result
-  total_sum.innerHTML =             total_result  
+  total_sum.innerHTML =             total_result
+  average_year.innerHTML =          average_year_result
+  average_month.innerHTML =         average_month_result
 
   //計算結果を基にグラフを作成
   var ctx = document.getElementById("myBarChart");

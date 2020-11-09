@@ -1,0 +1,17 @@
+.graph{
+  height: 600px;
+  padding: 100px 200px;
+  
+}
+
+.sum{
+  font-size: 25px;
+  padding: 15px 0 15px 60px;
+  display: flex;
+}
+
+.average{
+  font-size: 20px;
+  padding: 15px 0 15px 60px;
+  display: flex;
+}

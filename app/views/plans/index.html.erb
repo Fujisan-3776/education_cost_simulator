@@ -20,9 +20,9 @@
 
 <div class="welcome">
   <% if user_signed_in? %>
-    <p>ようこそ<%= current_user.name %>さん</p>
+    <h3>ようこそ<%= current_user.name %>さん</h3>
   <% else %>
-    <p>ようこそゲストさん</p>
+    <h3>ようこそゲストさん</h3>
   <% end %>
 </div>
 
