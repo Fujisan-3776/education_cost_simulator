@@ -51,14 +51,14 @@ function calculation(){
   
 
   //合計金額を計算し、新たな変数に代入
-  nursery_result =         parseInt(nursery.innerText * 12 * nursery_period.innerText)
-  kindergarten_result =    parseInt(kindergarten.innerText * 12 *3)
-  elementary_result =      parseInt(elementary.innerText * 12 * 6 + elementary_activity_one.innerText * 12 * elementary_activity_one_period.innerText + elementary_activity_two.innerText * 12 * elementary_activity_two_period.innerText) 
-  junior_high_result =     parseInt(junior_high.innerText * 12 * 3 + junior_high_club.innerText * junior_high_club_period.innerText + junior_high_activity.innerText * 12 * junior_high_activity_period.innerText)
-  high_result =            parseInt(high.innerText * 12 * 3) + parseInt(high_club.innerText * 12 * high_club_period.innerText) + parseInt(high_activity.innerText * 12 * high_activity_period.innerText) + parseInt(high_study_abroad.innerText) + parseInt(high_examination.innerText)
-  university_result =      parseInt(university.innerText * 12 * 3) + parseInt(university_club.innerText * 12 * university_club_period.innerText) + parseInt(university_money_transfer.innerText * 12 * university_money_transfer_period.innerText) + parseInt(university_study_abroad.innerText) + parseInt(university_job_hunting.innerText) + parseInt(university_examination.innerText)
-  graduate_school_result = parseInt(graduate_school.innerText * 12 * 3) + parseInt(graduate_school_job_hunting.innerText)
-  total_result =           parseInt((nursery_result + kindergarten_result + elementary_result + junior_high_result + high_result + university_result + graduate_school_result) / 10000)
+  nursery_result =         parseInt(nursery.innerText * 12 * nursery_period.innerText) / 10000
+  kindergarten_result =    parseInt(kindergarten.innerText * 12 * 3) / 10000
+  elementary_result =      parseInt(elementary.innerText * 12 * 6 + elementary_activity_one.innerText * 12 * elementary_activity_one_period.innerText + elementary_activity_two.innerText * 12 * elementary_activity_two_period.innerText) /10000
+  junior_high_result =     parseInt(junior_high.innerText * 12 * 3 + junior_high_club.innerText * junior_high_club_period.innerText + junior_high_activity.innerText * 12 * junior_high_activity_period.innerText) / 10000
+  high_result =            (parseInt(high.innerText * 12 * 3) + parseInt(high_club.innerText * 12 * high_club_period.innerText) + parseInt(high_activity.innerText * 12 * high_activity_period.innerText) + parseInt(high_study_abroad.innerText) + parseInt(high_examination.innerText)) / 10000
+  university_result =      (parseInt(university.innerText * 12 * 3) + parseInt(university_club.innerText * 12 * university_club_period.innerText) + parseInt(university_money_transfer.innerText * 12 * university_money_transfer_period.innerText) + parseInt(university_study_abroad.innerText) + parseInt(university_job_hunting.innerText) + parseInt(university_examination.innerText)) / 10000
+  graduate_school_result = (parseInt(graduate_school.innerText * 12 * 3) + parseInt(graduate_school_job_hunting.innerText)) / 10000
+  total_result =           parseInt((nursery_result + kindergarten_result + elementary_result + junior_high_result + high_result + university_result + graduate_school_result))
   average_year_result =    parseInt(total_result / 20)
   average_month_result =   parseInt(average_year_result / 12)
 
@@ -86,7 +86,7 @@ function calculation(){
         //データセット
         datasets: [{
             //凡例
-            label: "費用",
+            label: "費用（単位：万円）",
             //背景色
             backgroundColor: "rgba(75,192,192,0.4)",
             //枠線の色
