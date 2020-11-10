@@ -101,7 +101,7 @@ function calculation(){
         scales: {
             //縦軸の設定
             yAxes: [{
-  　　　　　　　　　//目盛りの設定
+                 //目盛りの設定
                 ticks: {
                     //開始値を0にする
                     beginAtZero:true,
