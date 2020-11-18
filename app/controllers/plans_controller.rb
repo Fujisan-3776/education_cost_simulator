@@ -37,6 +37,18 @@ class PlansController < ApplicationController
     redirect_to root_path
   end
 
+  def papa_sign_in
+    user = User.find(1)
+    sign_in user
+    redirect_to root_path
+  end
+
+  def mama_sign_in
+    user = User.find(2)
+    sign_in user
+    redirect_to root_path
+  end
+
   private
   def plan_params
     params.require(:plan).permit(:nursery_id, :nursery_period_id, :kindergarten_id, :elementary_id, :elementary_activity_one_id, :elementary_activity_one_period_id, :elementary_activity_two_id, :elementary_activity_two_period_id, :junior_high_id, :junior_high_club_id, :junior_high_club_period_id, :junior_high_activity_id, :junior_high_activity_period_id, :high_id, :high_club_id, :high_club_period_id, :high_activity_id, :high_activity_period_id, :high_study_abroad_id, :high_examination_id, :university_id, :university_club_id, :university_club_period_id, :university_money_transfer_id, :university_money_transfer_period_id, :university_study_abroad_id, :university_job_hunting_id, :university_examination_id, :graduate_school_id, :graduate_school_job_hunting_id, :user).merge(user_id: current_user.id)
