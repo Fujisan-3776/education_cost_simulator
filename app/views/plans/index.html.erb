@@ -3,56 +3,71 @@
     <h1>教育費用シミュレーター</h1>
   </div>
   <div class="header_right">
-    <ul class="nav-lists">
+    <ul class="nav-lists hidden ">
       <% if user_signed_in? %>
       <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
       <% else %>
-      <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-      <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-      <li><%= link_to 'パパ', papa_sign_in_path, method: :post %></li>
-      <li><%= link_to 'ママ', mama_sign_in_path, method: :post %></li>
+      <li class="nav_list"><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+      <li class="nav_list"><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+      <li class="nav_list"><%= link_to 'パパ', papa_sign_in_path, method: :post %></li>
+      <li class="nav_list"><%= link_to 'ママ', mama_sign_in_path, method: :post %></li>
       <% end %>
     </ul>
   </div>
 </header>
 
-
-
 <body>
+  <div class="background_upper">
+    <div class="start">
+      <div class="start_message">
+        ユーザーを選択して下さい
+      </div>
 
-<div class="welcome">
-  <% if user_signed_in? %>
-    <h3>ようこそ<%= current_user.name %>さん</h3>
-  <% else %>
-    <h3>ようこそゲストさん</h3>
-  <% end %>
-</div>
+      <div class="start_message ">
+        <p class="btn_design papa"><%= link_to 'パパ', papa_sign_in_path, method: :post, class: "link_to_papa" %></p>
+        <p class="btn_design mama"><%= link_to 'ママ', mama_sign_in_path, method: :post, class: "link_to_mama" %></p>
+      </div>
 
-<div class="start">
-  <%= link_to 'シミュレーション開始！', new_plan_path, class: "under_bar"  %>
-  <p></p>
-  <p>※開始するにはログインして下さい</P>
-</div>
+      <div class="start_message ">
+        <%= current_user.name %>でシミュレーションを行います
+      </div>
 
-<div class="plantable">プラン一覧</div>
-<div class="planborder">
-  <% @plan.each do |plan| %>
-  <span class="plan">
-    <%= link_to "プラン#{plan.id}", plan_path(plan.id) %>
-  </span>
-  <% end %>
-</div>
+      <div class="start_message">
+        <p class="btn_design btn-start"><%= link_to '開始', new_plan_path, class: "link_to_start"  %></p>
+      </div>
+    </div>
+  </div>
 
-<div class="how_to_use">
-<div class="how_to_use_inner">
-  <ul>
-    <li>＜使い方＞</li>
-    <li>１．シミュレーションプランを作成するにはログインして下さい</li>
-    <li>２．ログイン後、「シミュレーション開始！」ボタンをクリックして下さい</li>
-    <li>３．必要項目をプルダウンの中から選択して下さい</li>
-    <li>４．「結果」ボタンをクリックするとシミュレーション結果が表示されます</li>
-    <li>５．未ログインでも作成済みのプランは閲覧出来ます</li>
-</div>
-</div>
-
+  <div class="background_lower">
+    <div class="how_to_use">
+      <p class="item">＜使い方＞</p>
+      <ol class="how_to_use_message">
+        <li class="how_to_use_list">ユーザーを選択（パパ or ママ）</li>
+        <li class="how_to_use_list">「開始」ボタンをクリック</li>
+        <li class="how_to_use_list">必要項目をプルダウンの中から選択</li>
+        <li class="how_to_use_list">「結果」ボタンをクリック</li>
+      </ol>
+    </div>
+    <p class="item">＜作成済みプラン＞</p>
+    <% @plan.each do |plan| %>
+        <div class="col-sm-4">
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <div class="panel-heading-left">
+                  <strong><%= "プラン#{plan.id}" %></strong>
+                </div>
+                <div class="panel-heading-right">
+                      <span class="plan_list"><span class="glyphicon glyphicon-list-alt"></span><%= link_to '詳細', plan_path(plan.id) %></span>
+                      <span class="plan_list"><span class="glyphicon glyphicon-pencil"></span><%= link_to '編集', edit_plan_path(plan.id), method: :get %></span>
+                      <span class="plan_list"><span class="glyphicon glyphicon-trash"></span><%= link_to '削除', plan_path(plan.id), method: :delete %></span>
+                </div>
+              </div>
+              <div class="panel-body">
+                総額表示
+              </div>
+            </div>
+        </div>
+    <% end %>
+    
+  </div>
 </body>

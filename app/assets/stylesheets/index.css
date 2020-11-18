@@ -1,3 +1,14 @@
+.background_upper{
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-blue-fresh-flat-six-children-s-day-banner-background-image_228247.jpg);
+  background-size: 100%;
+}
+
+.background_lower{
+  margin-top: 15px;
+
+}
+
+
 h1,h2,h3,h4,h5,h6,p,ul,li {
   padding: 0;
   margin: 0;
@@ -29,12 +40,14 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
   width: 25vw;
   display: flex;
   justify-content: space-between;
+  
 }
 
-li{
+.nav_list{
   list-style: none;
   font-size: 20px;
   text-align: center;
+  
 }
 
 .welcome{
@@ -42,8 +55,8 @@ li{
   padding: 15px 0 15px 60px;
 }
 
-.start{
-  font-size: 30px;
+.starta{
+  /* font-size: 30px;
   padding: 20px 10px;
   height: 60px;
   margin: 50px 450px;
@@ -51,34 +64,114 @@ li{
   border-radius: 20px;
   text-align: center;
   
+  background-color: lightpink; */
+}
+
+.start{
+  padding: 50px 30vw;
+}
+
+.start_message{
+  width: 40vw;
+  text-align: center;
+  font-size: 35px;
+}
+
+
+.btn_design {
+  font-size: 28px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 15px;
+  background-color: lightsalmon;
+  color: aqua;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: perspective(2px) translateZ(0);
+  transform: perspective(2px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+/* マウスオーバー時 */
+.btn_design:hover, .btn_design:focus, .btn_design:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+.papa{
+  display: inline-block;
+  background-color: lightskyblue;
+  margin: 20px;
+}
+
+.link_to_papa{
+  color:dodgerblue;
+}
+
+.mama{
+  display: inline-block;
   background-color: lightpink;
+  margin: 20px;
 }
 
-.under_bar{
-  text-decoration: none;
+.link_to_mama{
+  color: tomato;
 }
 
-.plantable{
+.btn-start{
+  background-color: palegoldenrod;
+  width: 300px;
+}
+
+.link_to_start{
+  color: olive;
+}
+
+.panel-heading{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
   font-size: 25px;
-  padding: 15px 0 15px 60px;
 }
 
-.planborder{
-  padding: 0 60px;
+.panel-heading-left{
+  width: 40%;
 }
 
-.plan{
-  font-size: 25px;
-  margin: 0 30px;
+.panel-heading-right{
+  width: 60%;
+  font-size: 20px;
+  padding: 5px 0px 5px 20px;
 }
+
+.plan_list{
+  margin: 5px;
+}
+
 
 .how_to_use{
-  padding: 50px 300px;
+  padding: 20px 480px;
+  font-size: 20px;
 }
 
-.how_to_use_inner{
-  display: flex;
-  justify-content: center;
+.item{
+  text-align: center;
+  padding: 0px;
+  
+}
+
+.how_to_use_message{
   border: 1px solid black;
-  padding: 20px;
+  margin: 20px;
 }
