@@ -3,21 +3,20 @@
     <h1>教育費用シミュレーター</h1>
   </div>
   <div class="header_right">
-    <ul class="nav-lists hidden ">
+    <ul class="nav-lists  ">
       <% if user_signed_in? %>
-      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+      <li class="nav_list"></li>
+      <li class="nav_list"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
       <% else %>
-      <li class="nav_list"><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
       <li class="nav_list"><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-      <li class="nav_list"><%= link_to 'パパ', papa_sign_in_path, method: :post %></li>
-      <li class="nav_list"><%= link_to 'ママ', mama_sign_in_path, method: :post %></li>
+      <li class="nav_list"><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
       <% end %>
     </ul>
   </div>
 </header>
 
 <body>
-  <div class="background_upper">
+  <div class="body_upper">
     <div class="start">
       <div class="start_message">
         ユーザーを選択して下さい
@@ -29,7 +28,11 @@
       </div>
 
       <div class="start_message ">
+        <% if user_signed_in? %>
         <%= current_user.name %>でシミュレーションを行います
+        <% else %>
+        ユーザー未選択
+        <% end %>
       </div>
 
       <div class="start_message">
@@ -38,7 +41,7 @@
     </div>
   </div>
 
-  <div class="background_lower">
+  <div class="body_lower">
     <div class="how_to_use">
       <p class="item">＜使い方＞</p>
       <ol class="how_to_use_message">

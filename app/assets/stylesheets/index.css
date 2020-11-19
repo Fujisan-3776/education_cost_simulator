@@ -1,19 +1,11 @@
-.background_upper{
-  background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-blue-fresh-flat-six-children-s-day-banner-background-image_228247.jpg);
-  background-size: 100%;
-}
-
-.background_lower{
-  margin-top: 15px;
-
-}
-
-
+/* リセットCSS */
 h1,h2,h3,h4,h5,h6,p,ul,li {
   padding: 0;
   margin: 0;
 }
 
+
+/* ヘッダー */
 .header {
   height: 100px;
   background-color: #f0f0f0;
@@ -28,7 +20,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
 
 .header_right {
   width: 30vw;
-  padding: 10px 20px;
+  padding: 10px 100px;
   display: flex;
   align-items: center; 
   justify-content: center;
@@ -40,31 +32,19 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
   width: 25vw;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .nav_list{
   list-style: none;
   font-size: 20px;
   text-align: center;
-  
 }
 
-.welcome{
-  font-size: 25px;
-  padding: 15px 0 15px 60px;
-}
-
-.starta{
-  /* font-size: 30px;
-  padding: 20px 10px;
-  height: 60px;
-  margin: 50px 450px;
-  border: 3px solid red;
-  border-radius: 20px;
-  text-align: center;
-  
-  background-color: lightpink; */
+/* メインボディー */
+/* ボディーアッパー */
+.body_upper{
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-blue-fresh-flat-six-children-s-day-banner-background-image_228247.jpg);
+  background-size: 100%;
 }
 
 .start{
@@ -76,7 +56,6 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
   text-align: center;
   font-size: 35px;
 }
-
 
 .btn_design {
   font-size: 28px;
@@ -108,7 +87,6 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
   cursor: pointer;
 }
 
-
 .papa{
   display: inline-block;
   background-color: lightskyblue;
@@ -138,6 +116,26 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
   color: olive;
 }
 
+/* ボディーローワー */
+.body_lower{
+  margin-top: 15px;
+}
+
+.item{
+  text-align: center;
+  padding: 0px; 
+}
+
+.how_to_use{
+  padding: 20px 480px;
+  font-size: 20px;
+}
+
+.how_to_use_message{
+  border: 1px solid black;
+  margin: 20px;
+}
+
 .panel-heading{
   display: inline-flex;
   justify-content: space-between;
@@ -160,18 +158,5 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
 }
 
 
-.how_to_use{
-  padding: 20px 480px;
-  font-size: 20px;
-}
 
-.item{
-  text-align: center;
-  padding: 0px;
-  
-}
 
-.how_to_use_message{
-  border: 1px solid black;
-  margin: 20px;
-}
