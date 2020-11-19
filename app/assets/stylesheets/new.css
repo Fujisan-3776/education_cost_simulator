@@ -1,30 +1,94 @@
-.payment{
+/* リセットCSS */
+/* index.cssと共通 */
 
+/* ヘッダー */
+/* index.cssと共通 */
+
+/* メインボディー */
+.body_register{
+  width: 100vw;
+  height: 2200px;
+  display: flex;
 }
 
-.nursery,.kindergarten,.elementary,.junior_high,.high,.university,.graduate_school{
-  padding: 10px 0 10px 60px;
+/* メインボディーレフト*/
+.body_register_left{
+  width: 50%;
+  height: 100%;
+}
 
+.kind_of_school{
+  padding: 10px 0 10px 175px;
 }
 
 .pulldown{
   display: flex;
 }
 
-p{
+.item_new{
   padding: 15px;
   font-size: 20px;
 }
 
-.email,.password,.login_btn{
-  padding: 10px 0 10px 60px;
-  font-size: 20px;
-  
+.link_to_result{
+  border: none;
+  color: olive;
+  background-color:palegoldenrod;
+ 
 }
 
-.check{
-  font-size: 40px;
-  text-align: center;
-  background-color: lightpink;
-  outline: none;
+
+/* メインボディーライト */
+.body_register_right{
+  width: 50%;
+  height: 100%;
 }
+
+.image_nursery_kindergarten{
+  height: 14%;
+  background-image: url(https://frame-illust.com/fi/wp-content/uploads/2016/01/5109-1.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image_elementary{
+  height: 13%;
+  background-image: url(https://frame-illust.com/fi/wp-content/uploads/2016/01/5123-1.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image_junior_high{
+  height: 13%;
+  background-image: url(https://frame-illust.com/fi/wp-content/uploads/2016/01/5133-1.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image_high{
+  height: 20%;
+  background-image: url(https://data.ac-illust.com/data/thumbnails/0a/0a78395a83cf78b0d8526a77758dfa74_t.jpeg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image_university{
+  height: 21%;
+  background-image: url(https://previews.123rf.com/images/lenm/lenm1502/lenm150200086/36300523-%E4%B8%A6%E3%82%93%E3%81%A7-10-%E4%BB%A3%E5%A4%A7%E5%AD%A6%E7%94%9F%E3%81%AE%E3%82%AB%E3%83%83%E3%83%97%E3%83%AB%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88.jpg);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image_graduate_school{
+  height: 12%;
+  background-image: url(https://data.ac-illust.com/data/thumbnails/26/2677990cefd844035a6cc14bf625f804_t.jpeg);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
