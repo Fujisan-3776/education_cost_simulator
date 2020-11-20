@@ -1,13 +1,50 @@
+/* リセットCSS */
+/* index.cssと共通 */
+
+/* ヘッダー */
+/* index.cssと共通 */
+
+/* メインボディー */
+/* ボディーアッパー */
+.body_upper_show{
+  height: 350px;
+  display: flex;
+  
+  
+}
+
+.body_upper_show_left{
+  width: 60%;
+  padding: 50px;
+  
+
+}
+
+.body_upper_show_right{
+  width: 40%;
+  background-image: url(https://www.photolibrary.jp/mhd8/img568/450-20180206212758192235.jpg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ボディーローワー */
+.body_lower_show{
+
+}
+
+
 .graph{
   height: 600px;
-  padding: 100px 200px;
+  padding: 100px 250px;
   
 }
 
 .sum{
-  font-size: 25px;
+  font-size: 30px;
   padding: 15px 0 15px 60px;
   display: flex;
+  
 }
 
 .average{
