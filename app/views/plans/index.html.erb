@@ -62,7 +62,7 @@
                 <div class="panel-heading-right">
                       <span class="plan_list"><span class="glyphicon glyphicon-list-alt"></span><%= link_to '詳細', plan_path(plan.id) %></span>
                       <span class="plan_list"><span class="glyphicon glyphicon-pencil"></span><%= link_to '編集', edit_plan_path(plan.id), method: :get %></span>
-                      <span class="plan_list"><span class="glyphicon glyphicon-trash"></span><%= link_to '削除', plan_path(plan.id), method: :delete %></span>
+                      <span class="plan_list"><span class="glyphicon glyphicon-trash"></span><%= link_to '削除', plan_path(plan.id), method: :delete, data: { confirm: '本当に削除しますか？' } %></span>
                 </div>
               </div>
               <div class="panel-body">
