@@ -1,6 +1,20 @@
 /* リセットCSS */
 /* index.cssと共通 */
 
+/* エラーメッセージ */
+
+.error-message{
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+.field_with_errors{
+  display: inline-flex;
+  border:2px solid red;
+  height: 30px;
+}
+
 /* ヘッダー */
 /* index.cssと共通 */
 

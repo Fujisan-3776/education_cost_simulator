@@ -13,8 +13,11 @@ class PlansController < ApplicationController
 
   def create
     @plan = Plan.new(plan_params)
-    @plan.save
-    render :show
+    if @plan.save
+      render :show
+    else
+      render :new
+    end
   end
 
   def show
