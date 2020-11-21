@@ -66,10 +66,17 @@
                 </div>
               </div>
               <div class="panel-body">
-                総額表示
+
+                <%= render partial: "shared/all_plan", locals: {plan:plan}%>
+
+
+                
+
               </div>
             </div>
         </div>
+        
+        
     <% end %>
     
   </div>

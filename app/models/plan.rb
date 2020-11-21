@@ -65,10 +65,5 @@ class Plan < ApplicationRecord
     validates :graduate_school_id
     validates :graduate_school_job_hunting_id
   end
-
-
   
-
-
-
 end
