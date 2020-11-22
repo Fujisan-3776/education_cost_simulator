@@ -41,7 +41,8 @@ c．ページレイアウト
 
 # ２．デモ画面  
   作成中
-  https://gyazo.com/3196612209fa7b4309c8d340f3ef498b
+  ![オリジナルアプリ背景１](https://user-images.githubusercontent.com/71694686/99896338-17908180-2cd3-11eb-9b02-cbd3cfbb7098.jpg)
+
 
 # ３．このアプリ開発を通して得られたこと
 （１）技術面  
