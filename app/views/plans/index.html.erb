@@ -52,7 +52,8 @@
       </ol>
     </div>
     <p class="item_index">＜作成済みプラン＞</p>
-    <% @plan.each do |plan| %>
+    <%= render partial: 'shared/all_plan2', collection: @plans %>
+    <% @plans.each do |plan| %>
         <div class="col-sm-4">
             <div class="panel panel-warning">
               <div class="panel-heading">
@@ -66,18 +67,15 @@
                 </div>
               </div>
               <div class="panel-body">
-
                 <%= render partial: "shared/all_plan", locals: {plan:plan}%>
-
-
-                
-
               </div>
             </div>
         </div>
         
         
     <% end %>
+    
+    <%# <%= render partial: 'message', collection: @messages %>
     
   </div>
 

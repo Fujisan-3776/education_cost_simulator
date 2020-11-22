@@ -1,6 +1,6 @@
 class PlansController < ApplicationController
   def index
-    @plan = Plan.all
+    @plans = Plan.all
   end
 
   def new
