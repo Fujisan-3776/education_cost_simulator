@@ -60,7 +60,7 @@
 （４）「結果」ボタンをクリック  
 [![Image from Gyazo](https://gyazo.com/1da421a5b27e24a91d960dfd38714dd5.gif)](https://gyazo.com/1da421a5b27e24a91d960dfd38714dd5)  
 （５）作成済みプランの詳細／編集／削除はトップページから可能です  
-[![Image from Gyazo](https://gyazo.com/db8a1bf13352c820e7fb0f154aa664dc.gif)](https://gyazo.com/db8a1bf13352c820e7fb0f154aa664dc)  
+[![Image from Gyazo](https://gyazo.com/fc91882d3e708fa06d3f91c19063f600.gif)](https://gyazo.com/fc91882d3e708fa06d3f91c19063f600)  
 
 # ３．このアプリ開発を通して得られたこと
 （１）技術面  
