@@ -41,13 +41,13 @@ class PlansController < ApplicationController
   end
 
   def papa_sign_in
-    user = User.find(1)
+    user = User.find_by(name:"パパ")
     sign_in user
     redirect_to root_path
   end
 
   def mama_sign_in
-    user = User.find(2)
+    user = User.find_by(name:"ママ")
     sign_in user
     redirect_to root_path
   end
