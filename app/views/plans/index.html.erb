@@ -67,7 +67,19 @@
                 </div>
               </div>
               <div class="panel-body">
-                <%= render partial: "shared/all_plan", locals: {plan:plan}%>
+                <div class="panel-body-left">
+                  <% if plan.user.name == "パパ"%>
+                  <p id="papa_make"><%= plan.user.name%></p>
+                  <% elsif plan.user.name == "ママ"%>
+                  <p id="mama_make"><%= plan.user.name%></p>
+                  <% else %>
+                  <% end %>
+                </div>
+                <div class="panel-body-right">
+                  <%= render partial: "shared/all_plan", locals: {plan:plan}%>
+                </div>
+
+                
               </div>
             </div>
         </div>

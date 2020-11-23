@@ -154,6 +154,36 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
   padding: 5px 0px 5px 20px;
 }
 
+.panel-body{
+  display: flex;
+  font-size: 30px;
+  height: 70px;
+}
+
+.panel-body-left{
+  width: 25%;
+  text-align: center;
+}
+
+.panel-body-right{
+  width: 75%;
+  text-align: center;
+}
+
+#papa_make{
+  height: 100%;
+  border-radius: 10px;
+  color:dodgerblue;
+  background-color: lightskyblue;
+}
+
+#mama_make{
+  height: 100%;
+  border-radius: 10px;
+  color: tomato;
+  background-color: lightpink;
+}
+
 .plan_list{
   margin: 5px;
 }
@@ -166,6 +196,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li {
   text-align: center;
   bottom: 0;
   padding: 5px 0;
+  margin: -10px;
   font-size: 10px;
 }
 
