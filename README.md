@@ -52,17 +52,15 @@
 
 # ２．デモ画面（使い方）  
 （１）ユーザーを選択（パパ or ママ）  
-&emsp;&emsp;[![Image from Gyazo](https://gyazo.com/5ec486eaf0369ce18be2c88586ac8be1.gif)](https://gyazo.com/5ec486eaf0369ce18be2c88586ac8be1)
+[![Image from Gyazo](https://gyazo.com/5ec486eaf0369ce18be2c88586ac8be1.gif)](https://gyazo.com/5ec486eaf0369ce18be2c88586ac8be1)  
 （２）開始ボタンをクリック  
-&emsp;&emsp;[![Image from Gyazo](https://gyazo.com/41772848fbfa5fed7b9a77b0513c5741.gif)](https://gyazo.com/41772848fbfa5fed7b9a77b0513c5741)
+[![Image from Gyazo](https://gyazo.com/41772848fbfa5fed7b9a77b0513c5741.gif)](https://gyazo.com/41772848fbfa5fed7b9a77b0513c5741)  
 （３）必要項目をプルダウンの中から選択  
-&emsp;&emsp;[![Image from Gyazo](https://gyazo.com/67afa2525174c16e0dff36a366e5d882.gif)](https://gyazo.com/67afa2525174c16e0dff36a366e5d882)
+[![Image from Gyazo](https://gyazo.com/67afa2525174c16e0dff36a366e5d882.gif)](https://gyazo.com/67afa2525174c16e0dff36a366e5d882)  
 （４）「結果」ボタンをクリック  
-&emsp;&emsp;[![Image from Gyazo](https://gyazo.com/1da421a5b27e24a91d960dfd38714dd5.gif)](https://gyazo.com/1da421a5b27e24a91d960dfd38714dd5)
+[![Image from Gyazo](https://gyazo.com/1da421a5b27e24a91d960dfd38714dd5.gif)](https://gyazo.com/1da421a5b27e24a91d960dfd38714dd5)  
 （５）作成済みプランの詳細／編集／削除はトップページから可能です  
-&emsp;&emsp;[![Image from Gyazo](https://gyazo.com/db8a1bf13352c820e7fb0f154aa664dc.gif)](https://gyazo.com/db8a1bf13352c820e7fb0f154aa664dc)
-
-
+[![Image from Gyazo](https://gyazo.com/db8a1bf13352c820e7fb0f154aa664dc.gif)](https://gyazo.com/db8a1bf13352c820e7fb0f154aa664dc)  
 
 # ３．このアプリ開発を通して得られたこと
 （１）技術面  
