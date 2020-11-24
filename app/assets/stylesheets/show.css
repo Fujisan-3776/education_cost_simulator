@@ -30,21 +30,19 @@
 
 /* ボディーローワー */
 .body_lower_show{
-
+  height: 500px;
+  padding: 0 0 60px 0;
 }
 
-
 .graph{
-  height: 600px;
+  height: 100%;
   padding: 100px 250px;
-  
 }
 
 .sum{
   font-size: 30px;
   padding: 15px 0 15px 60px;
   display: flex;
-  
 }
 
 .average{
@@ -52,4 +50,9 @@
   padding: 15px 0 15px 100px;
   display: flex;
   text-decoration: underline;
+}
+
+.note{
+  height: 200px;
+  margin: 0 300px;
 }

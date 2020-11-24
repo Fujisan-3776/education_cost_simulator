@@ -23,6 +23,7 @@
                 <p class="item_new"><%= f.collection_select(:nursery_id, Nursery.all, :id, :name, {}, {class:"hoge", id:"fuga"}) %></p>
                 <p class="item_new">期間</p>
                 <p class="item_new"><%= f.collection_select(:nursery_period_id, NurseryPeriod.all, :id, :period, {}, {class:"hoge", id:"fuga"}) %></p>
+                <p class="item_new">年</p>
               </div>
             </div>
 
@@ -45,12 +46,14 @@
                 <p class="item_new"><%= f.collection_select(:elementary_activity_one_id, ElementaryActivityOne.all, :id, :name, {}, {class:"hoge", id:"fuga"}) %></p> 
                 <p class="item_new">期間</p>
                 <p class="item_new"><%= f.collection_select(:elementary_activity_one_period_id, ElementaryActivityOnePeriod.all, :id, :period, {}, {class:"hoge", id:"fuga"}) %></p> 
+                <p class="item_new">年</p>
               </div>
               <div class = 'pulldown'>
                 <p class="item_new">・習い事②</p>
                 <p class="item_new"><%= f.collection_select(:elementary_activity_two_id, ElementaryActivityTwo.all, :id, :name, {}, {class:"hoge", id:"fuga"}) %></p> 
                 <p class="item_new">期間</p>
                 <p class="item_new"><%= f.collection_select(:elementary_activity_two_period_id, ElementaryActivityTwoPeriod.all, :id, :period, {}, {class:"hoge", id:"fuga"}) %></p> 
+                <p class="item_new">年</p>
               </div>
             </div>
 
@@ -65,12 +68,14 @@
                 <p class="item_new"><%= f.collection_select(:junior_high_club_id, JuniorHighClub.all, :id, :name, {}, {class:"hoge", id:"fuga"}) %></p> 
                 <p class="item_new">期間</p>
                 <p class="item_new"><%= f.collection_select(:junior_high_club_period_id, JuniorHighClubPeriod.all, :id, :period, {}, {class:"hoge", id:"fuga"}) %></p> 
+                <p class="item_new">年</p>
               </div>
               <div class = 'pulldown'>  
                 <p class="item_new">・習い事</p>
                 <p class="item_new"><%= f.collection_select(:junior_high_activity_id, JuniorHighActivity.all, :id, :name, {}, {class:"hoge", id:"fuga"}) %></p> 
                 <p class="item_new">期間</p>
                 <p class="item_new"><%= f.collection_select(:junior_high_activity_period_id, JuniorHighActivityPeriod.all, :id, :period, {}, {class:"hoge", id:"fuga"}) %></p> 
+                <p class="item_new">年</p>
               </div>
             </div>
 
@@ -85,12 +90,14 @@
                 <p class="item_new"><%= f.collection_select(:high_club_id, HighClub.all, :id, :name, {}, {class:"hoge", id:"fuga"}) %></p> 
                 <p class="item_new">期間</p>
                 <p class="item_new"><%= f.collection_select(:high_club_period_id, HighClubPeriod.all, :id, :period, {}, {class:"hoge", id:"fuga"}) %></p> 
+                <p class="item_new">年</p>
               </div>
               <div class = 'pulldown'> 
                 <p class="item_new">・習い事</p>
                 <p class="item_new"><%= f.collection_select(:high_activity_id, HighActivity.all, :id, :name, {}, {class:"hoge", id:"fuga"}) %></p> 
                 <p class="item_new">期間</p>
                 <p class="item_new"><%= f.collection_select(:high_activity_period_id, HighActivityPeriod.all, :id, :period, {}, {class:"hoge", id:"fuga"}) %></p> 
+                <p class="item_new">年</p>
               </div>
               <div class = 'pulldown'> 
                 <p class="item_new">・留学</p>
@@ -113,12 +120,14 @@
                 <p class="item_new"><%= f.collection_select(:university_club_id, UniversityClub.all, :id, :name, {}, {class:"hoge", id:"fuga"}) %></p> 
                 <p class="item_new">期間</p>
                 <p class="item_new"><%= f.collection_select(:university_club_period_id, UniversityClubPeriod.all, :id, :period, {}, {class:"hoge", id:"fuga"}) %></p> 
+                <p class="item_new">年</p>
               </div>
               <div class = 'pulldown'> 
                 <p class="item_new">・仕送り</p>
                 <p class="item_new"><%= f.collection_select(:university_money_transfer_id, UniversityMoneyTransfer.all, :id, :name, {}, {class:"hoge", id:"fuga"}) %></p> 
                 <p class="item_new">期間</p>
                 <p class="item_new"><%= f.collection_select(:university_money_transfer_period_id, UniversityMoneyTransferPeriod.all, :id, :period, {}, {class:"hoge", id:"fuga"}) %></p> 
+                <p class="item_new">年</p>
               </div>
               <div class = 'pulldown'> 
                 <p class="item_new">・留学</p>

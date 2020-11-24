@@ -40,10 +40,12 @@
 
 ## （３）設計
 ### a．画面遷移図  
-&emsp;&emsp;![education_cost_simulator_画面遷移図](https://user-images.githubusercontent.com/71694686/99903934-f64b8780-2d0a-11eb-8f6f-75c6b6e328d9.jpeg)
+&emsp;&emsp;![education_cost_simulator_画面遷移図](https://user-images.githubusercontent.com/71694686/100082266-5ff29f80-2e8b-11eb-8295-246a6cc96094.jpeg)
+
 
 ### b．ER図  
-&emsp;&emsp;![education_cost_simulator_ER図](https://user-images.githubusercontent.com/71694686/99922191-8244ca00-2d72-11eb-97ae-92b8fcf72d74.jpeg)
+&emsp;&emsp;![education_cost_simulator_ER図](https://user-images.githubusercontent.com/71694686/100082284-65e88080-2e8b-11eb-815d-04d03a59df88.jpeg)
+
 
 ### c．ページレイアウト  
 &emsp;※設計段階で作成したイメージであり、実際に作成したアプリとは画面構成が異なります  
